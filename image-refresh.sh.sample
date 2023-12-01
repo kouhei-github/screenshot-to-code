@@ -1,0 +1,6 @@
+ocker compose -f docker-compose-prod.yml build
+aws ecr get-login-password --region ap-northeast-1 --profile=<profile名> --region ap-northeast-1  | docker login --username AWS --password-stdin 409724938208.dkr.ecr.ap-northeast-1.amazonaws.com
+# ECRのコンソールに出てくるtagコマンドのコピー
+docker tag <samplのコンテナイメージ名を記載>:latest 409724938208.dkr.ecr.ap-northeast-1.amazonaws.com/<samplのコンテナイメージ名を記載>:latest
+# ECRのコンソールに出てくるpushコマンドのコピー
+docker push 409724938208.dkr.ecr.ap-northeast-1.amazonaws.com/<sampleのコンテナイメージ名を記載>:latest

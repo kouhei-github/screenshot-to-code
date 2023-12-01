@@ -19,3 +19,5 @@ RUN poetry install
 
 # Copy the current directory contents into the container at /app
 COPY ./ /app/
+
+CMD ["poetry", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7001"]

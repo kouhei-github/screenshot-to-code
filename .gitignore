@@ -11,3 +11,5 @@ backend/backend/*
 # Env vars
 frontend/.env.local
 .env
+.idea
+.vscode

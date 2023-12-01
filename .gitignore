@@ -13,3 +13,4 @@ frontend/.env.local
 .env
 .idea
 .vscode
+image-refresh.sh
